@@ -1,0 +1,25 @@
+.single-post-container{
+    min-height: 91vh;
+    margin:auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+
+.single-post-container .card-image img{
+    height: 100%;
+}
+
+.single-post-container .card-content{
+    width: 100%;
+}
+
+.single-post-container .post-user-pic{
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 35px;
+}

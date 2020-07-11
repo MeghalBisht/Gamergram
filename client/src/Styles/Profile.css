@@ -1,0 +1,255 @@
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.img-container .input-field{
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+
+.img-container .btn{
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: var(--primary-bg);
+    border: 0;
+    color: var(--primary-text);
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.img-container .file-path-wrapper{
+    opacity: 0;
+}
+
+.img-container button:hover{
+    opacity: 0.86;
+}
+
+.img-container img{
+    width: 125px;
+    border: 3px solid var(--primary-bg);
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profileContainer{
+    margin: auto;
+    width: 75%;
+    padding-top: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-settings{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.profile-settings i{
+    font-size: 25px;
+    color: var(--highlight);
+    cursor: pointer;
+}
+
+.profile-settings i:hover{
+    opacity: 0.85;
+}
+
+.profile-inner-container{
+    width: 90%;
+    position: relative;
+    color: var(--primary-bg);
+    padding: 25px 5px;
+    background-color: #205f58;
+    border-radius: 24px 24px 0 0;
+    max-width: 100%;
+    display: flex;
+    border-bottom: 1px solid var(--primary-text);
+    justify-content: space-around;
+}
+
+.data-container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-container .followBtn,
+.data-container .unfollowBtn{
+    width: 70%;
+    cursor: pointer;
+    background-color: var(--primary-bg);
+    margin-top: 10px;
+    border: 0;
+    color: var(--primary-text);
+    padding: 6px 0;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1.2px solid var(--primary-bg);
+}
+
+.followBtn:hover,
+.unfollowBtn:hover{
+  opacity: 0.8;
+}
+
+.data-container .unfollowBtn{
+    background-color: transparent;
+    color: var(--primary-bg);
+}
+
+.data-container h5{
+    text-align: center;
+    margin: -5px 0 6px 0;
+    font-size: 16.5px;
+    color: #d6efc7d0;
+}
+
+.data-container h4{
+    font-family: 'Grand Hotel', cursive;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+.profile-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.profile-gallery{
+    background-color: #fff;
+    padding: 30px 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60vh;
+    align-items: center;
+}
+
+.profile-gallery h5{
+    color: var(--primary-text);
+}
+
+.profile-gallery .gallery-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.profile-gallery img{
+ width: 310px ;
+ height: 220px ;
+ margin: 10px 5px;
+ object-fit: cover;
+}
+
+.create-post{
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.create-post h5{
+    color: var(--primary-text);
+    font-size: 22.5px;
+}
+
+.create-post .link{
+    color: var(--primary-text);
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1464px){
+.profileContainer{
+        width: 85%;
+}
+.profile-inner-container{
+    width: 95%;
+}
+
+.profile-gallery{
+    width: 95%;
+}
+
+.data-container .followBtn,
+.data-container .unfollowBtn{
+    width: 60%;
+}
+}
+
+@media screen and (max-width:1200px){
+    .profileContainer{
+        width: 95%;
+    }
+.profile-gallery img{
+ width: 290px ;
+ height: 200px ;
+ margin: 10px 5px;
+}
+.data-container{
+    width: 50%;
+}
+.data-container .followBtn,
+.data-container .unfollowBtn{
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 1036px){
+.profile-gallery img{
+    width: 270px;
+    height: 190px;
+}
+.profileContainer{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:774px){
+.profile-gallery img{
+    width: 280px ;
+    height: 200px ;
+    margin: 10px 5px;
+}
+.profile-inner-container{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-gallery{
+    width: 90%;
+}
+.data-container{
+    width: 100%;
+}
+.data-container .followBtn,
+.data-container .unfollowBtn{
+    width: 40%;
+}
+}

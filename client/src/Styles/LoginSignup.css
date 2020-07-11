@@ -1,0 +1,110 @@
+.myCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.myCard h2{
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.authCard{
+    box-shadow: 0 0 4px 0.35px var(--sec-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    height: 570px;
+    min-height: auto;
+    min-width: auto;
+    padding: 40px 25px;
+    border-radius: 6px;
+}
+
+.authCard .btn{
+    margin: 20px auto;
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.google-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.choose_file{
+    position:relative;
+    display:inline-block;    
+    border-radius:4px;
+    width:150px; 
+    height: 35px !important;
+    padding: 0px 3px 0px 3px;
+    margin-top: 2px;
+}
+
+ input:focus{
+    border-bottom: 1.5px solid var(--primary-text) !important;
+    box-shadow: 0 1px 0 0 var(--sec-text) !important;
+}
+
+.authCard input::placeholder{
+    color: var(--sec-text);
+    text-transform: capitalize;
+}
+
+.alterLink{
+    text-align: center;
+}
+
+.alterLink p{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.alterLink .link{
+    color: var(--primary-text) ;
+    margin-left: 5px;
+    font-size: 16.5px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+
+@media screen and (max-width:588px){
+    .myCard{
+        margin-top: 30px;
+    }
+    
+.authCard{
+    max-width: 400px;
+    height: 540px;
+    margin: 0 15px;
+    padding: 30px 15px;
+}
+}
+
+@media screen and (max-width:450px){
+.authCard{
+    margin: 10px;
+    max-width: 430px;
+    width: 90vw;
+    margin-top: 30px;
+}
+.myCard{
+    margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 210px){
+    *{
+        overflow: hidden;
+    }
+}

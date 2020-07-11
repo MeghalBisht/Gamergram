@@ -1,0 +1,42 @@
+.createContainer{
+    display: flex;
+    max-width: 800px;
+    height: 400px;
+    padding: 0px 20px;
+    border-radius: 6px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.createContainer .btn{
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.createContainer .post-here{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--primary-text);
+}
+
+.createContainer .post-here span{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.submitBtn{
+    margin: 20px auto;
+}
+
+@media screen and (max-width:800px){
+    .createContainer{
+        margin: 60px 15px;
+        height: 350px;
+    }
+}

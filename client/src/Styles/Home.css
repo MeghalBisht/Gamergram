@@ -1,0 +1,229 @@
+.homeContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.home-create-post{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    max-width: 500px;
+    width: 500px;
+    margin: 20px 0 10px 0;
+}
+
+.home-create-post h5{
+    color: var(--primary-text);
+    cursor: pointer;
+    font-size: 22px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.home-create-post i{
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 20px;
+    color: var(--primary-text);
+}
+
+.home-card{
+    width: 500px;
+    max-width: 500px;
+    padding: 0 0px;
+    box-shadow: 0 4px 4px rgba(100, 100, 100, 0.421);
+    margin: 15px;
+}
+
+
+.home-card .posted-by{
+    font-size: 16.5px;
+    width: 100%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 3px rgba(175, 214, 159, 0.899);
+    padding: 9px 12px;
+    margin: 0 0 20px 0;
+    border-radius: 0 0 16px 16px;
+    color: var(--primary-bg);
+    background-color: var(--primary-text);
+    text-transform: capitalize;
+}
+
+.home-card .posted-by span{
+    margin-left: 5px;
+}
+
+.homeContainer .post-user-pic{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.home-card .posted-by span{
+    font-weight: 600;
+    height: 100%;
+    color: var(--primary-bg);
+    letter-spacing: 0.8px;
+}
+
+.home-card .posted-by span i{
+    right: 10px;
+    margin-top: -12px;
+    position: absolute;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--highlight);
+}
+
+.card-content i{
+   margin: -10px 0 0 0;
+   cursor: pointer;
+   font-size: 28px;
+   padding: 0;
+}
+
+.likes{
+    margin-bottom: 15px !important;
+}
+
+.unlike{
+    color: rgba(255, 0, 0, 0.925);
+}
+
+.like{
+    color: #10332fc9;
+}
+
+.card-content p{
+    letter-spacing: 0.3px;
+    font-size: 16.5px;
+    color: var(--sec-text);
+}
+
+.card-image img{
+    height: 350px;
+    object-fit: cover;
+    padding: 0 10px;
+    width: 500px !important;
+}
+
+.comment-box h5{
+    font-size: 17.5px;
+    background-color: var(--sec-text);
+    color: #fff;
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.homeContainer input::placeholder{
+color: var(--sec-text) !important;
+}
+
+.comment-box h6 span:nth-child(1){
+    color: var(--primary-text);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.comment-box h6 .Me{
+    background-color: var(--primary-text);
+    color: var(--primary-bg) !important;
+    padding: 3px 15px;
+    letter-spacing: 1.4px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.comment-box hr{
+    margin: 1px 0;
+    opacity: 0.35;
+}
+
+.comment-box span{
+    margin-left: 10px;
+    text-transform: none;
+    color: var(--sec-text);
+    display: inline-block;
+    font-weight: 500;
+}
+
+.comment-box .delete-comment{
+    float: right;
+}
+
+.comment-box .delete-comment i{
+    font-size: 20px !important;
+    color: var(--highlight);
+}
+
+.inner-comment-box{
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width: 550px){
+    .home-card{
+        width: 90%;
+        max-width: 90%;
+    }
+    .card-image img{
+        height: 100%;
+        max-height: 350px;
+        object-fit: cover;
+        padding: 0 10px;
+        width: 100% !important;
+    }
+    .home-create-post{
+        width: 90%;
+    }
+}
+
+.connect-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.0755;
+    background: url('../discover.png') center center/cover;
+}
+
+.following-posts-container{
+    position: absolute;
+    top: 50%;
+    padding: 0 8px;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.following-posts-container h5{
+    font-size: 22px;
+    color: var(--primary-text);
+    margin: 0;
+    font-weight: 600;
+}
+
+.following-posts-container p{
+    color: var(--primary-text);
+    margin: 15px 0;
+    font-size: 17.5px;
+}
+
+.following-posts-container .link{
+    font-size: 18px;
+    color: var(--primary-text);
+    font-weight: 600;
+}

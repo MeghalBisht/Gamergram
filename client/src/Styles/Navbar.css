@@ -1,0 +1,153 @@
+.logo{
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 500 !important;
+    margin-left: 8px;
+}
+
+.modal{
+    color: var(--primary-text);
+}
+
+.collection{
+    border: 0px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection .collection-item{
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 16.5px;
+    align-items: center;
+    padding: 0 20px;
+    margin: 2px 0 !important;
+}
+
+.collection a{
+    border-bottom: 1px solid var(--primary-bg);
+    padding: 0;
+}
+
+.collection-item p{
+    color: var(--primary-text);
+}
+
+.collection-item img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-wrapper{
+    z-index: 99;
+    box-shadow: 0 3px 10px 0 rgba(182, 182, 182, 0.486);
+    background-color: var(--primary-text);
+}
+
+.nav-wrapper a{    
+    font-weight: 700;
+    color: var(--primary-bg);
+    letter-spacing: .4px;
+}
+
+.nav-links button{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--highlight);
+    letter-spacing: .4px;
+    background-color: var(--primary-text);
+    cursor: pointer;
+    margin-right: 8px;
+    border: 0;
+}
+
+.searchBox{
+    color: var(--highlight);
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.searchBox:hover{
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.smallScreen{
+    display: none;
+}
+
+.settings-icon{
+    display: none;
+}
+
+.hide{
+    display: none !important;
+}
+.show{
+    display: flex !important;
+}
+
+.addOpacity{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    background-color: #13302c63;
+    position: absolute;
+}
+
+@media screen and (max-width: 992px){
+    .hide-on-med-and-down{
+        display: block !important;
+    }
+}
+
+
+@media screen and (max-width:552px){
+    .hide-on-med-and-down{
+        display: none !important;
+    }
+    .smallScreen{
+        flex-direction: column !important;
+        position: absolute;
+        justify-content: space-around !important;
+        align-items: center !important;
+        height: 40vh;
+        top: 56px;
+        z-index: 99;
+        right: 0px;
+        background-color: var(--primary-text);
+        width: 100%;
+        padding-bottom: 10px;
+        box-shadow: 0 3px 3px #1f3f36;
+    }
+
+    .smallScreen li{
+        display: block !important;
+        }
+    .settings-icon li{
+        content: "";
+        list-style: none;
+        margin-top: 5px;
+        width: 5.5px;
+        height: 5.5px;
+        border-radius: 50%;
+        background-color: var(--primary-bg);
+    }
+    .settings-icon{
+        padding: 0 5px;
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

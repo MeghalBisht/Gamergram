@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root{
+    --primary-bg : #d6efc7;
+    --highlight: #eebb4d;
+    --sec-text: #8eaf77;
+    --primary-text: #184d47;
+}
+
+.App{
+    font-family: 'PT Sans', sans-serif;
+    min-height: 100vh;
+    background-color: var(--primary-bg);
+}
+
+#toast-container{
+    top: 0%;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px){
+#toast-container{
+    top: 1vh;
+    min-width: fit-content !important;
+}
+}
+
+button{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.footer{
+    background-color: var(--primary-text);
+    margin-top: 50px;
+    width: 100%;
+    color: var(--primary-bg);
+}
+
+.footer a{
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: var(--primary-bg);
+}
+
+.footer a:hover{
+    opacity: 0.75;
+}
+
+.footer h5{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 28px;
+    letter-spacing: 1.2px;
+}
+
+.footer-copyright .container span{
+    letter-spacing: 1.2px;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 23px;
+    margin-left: 5px;
+}
+
+.footer-copyright .container{
+    text-align: center;
+}

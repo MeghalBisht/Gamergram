@@ -14,7 +14,7 @@ Heroku
 
 ## Installation
 
-1 Fork this repository 
+1 Fork this repository \n
 2 Clone it
 3 Open cmd, and enter git clone "cloned repo name"
 4 cd client , npm start

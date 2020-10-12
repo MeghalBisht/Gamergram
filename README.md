@@ -14,11 +14,11 @@ Heroku
 
 ## Installation
 
-# Fork this repository
-# Clone it
-# Open cmd, and enter git clone "cloned repo name"
-# cd client , npm start
-# node app.js
+1 Fork this repository 
+2 Clone it
+3 Open cmd, and enter git clone "cloned repo name"
+4 cd client , npm start
+5 node app.js
 
 
 ## Contributors guideline

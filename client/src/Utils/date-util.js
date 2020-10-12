@@ -9,7 +9,7 @@ export const relativeDate = (timestamp) => {
   const diffDays = Math.floor(diffHours / NB_HOURS_DAY);
   const diffYears = Math.floor(diffDays / NB_DAYS_YEAR);
 
-  if (diffMinutes <= 2) return "Posted a few minutes ago";
+  if (diffMinutes < 2) return "Posted a few minutes ago";
 
   if (diffMinutes < NB_MINUTES_HOUR) return `Posted ${diffMinutes} minutes ago`;
 

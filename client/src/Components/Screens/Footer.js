@@ -15,7 +15,7 @@ function Footer() {
                         <ul>
                             <li><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/meghal-bisht-777451177/">LinkedIn</a></li>
                             <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/MeghalBisht">GitHub</a></li>
-                            <li><a rel="noopener noreferrer" target="_blank" href="https://meghalbisht.github.io/Meghal-Resume/">Website</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://resume-meghal.herokuapp.com/">Website</a></li>
                         </ul>
                     </div>
                 </div>

@@ -5,12 +5,16 @@ import M from 'materialize-css'
 import { UserContext } from '../../App'
 import Footer from './Footer'
 import GoogleLogin from 'react-google-login'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+const eye = <FontAwesomeIcon icon={faEye} />;
 
 function Login() {
-    const { dispatch } = useContext(UserContext)
-    const history = useHistory()
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const { dispatch } = useContext(UserContext);
+    const history = useHistory();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [passwordShow,setPasswordShow] = useState(false);
 
     const signinHandler = () => {
 
@@ -85,6 +89,10 @@ function Login() {
             })
     }
 
+    const togglePasswrod = () => {
+        setPasswordShow(passwordShow ? false:true);
+    }
+
     return (
         <div className="myCard">
             <div className="card authCard">
@@ -108,9 +116,10 @@ function Login() {
                 <input
                     value={password}
                     onChange={e => setPassword(e.target.value)}
-                    type="password"
+                    type={passwordShow?"text" : "password"}
                     placeholder="password"
                 />
+                <i onClick={togglePasswrod}>{eye}</i>
                 <button type="submit" onClick={signinHandler} className="btn waves-effect waves-light">Login</button>
                 <div className="alterLink">
                     <span>

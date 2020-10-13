@@ -6,6 +6,7 @@ import '../../Styles/Home.css'
 import { Link } from 'react-router-dom'
 import { UserContext } from '../../App'
 import M from 'materialize-css'
+import { relativeDate } from '../../Utils/date-util.js';
 
 
 function SinglePost() {
@@ -156,7 +157,8 @@ function SinglePost() {
           <img src={post.photo} alt="post_img" />
         </div>
         <div className="card-content">
-          {
+          <div class="post-info-stripe">
+            {
             miniLoading ?
               <div className="like-loader">
               </div>
@@ -169,7 +171,10 @@ function SinglePost() {
                     <i onClick={() => likePost(post._id)} className="like material-icons">thumb_up</i>
                 }
               </div>
-          }
+            }
+            <div class="post-date">{ relativeDate(post.createdAt) }</div>
+            </div>
+          
           <p className="likes">{post.likes.length} likes</p>
           <p>{post.body}</p>
 

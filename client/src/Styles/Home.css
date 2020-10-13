@@ -227,3 +227,18 @@ color: var(--sec-text) !important;
     color: var(--primary-text);
     font-weight: 600;
 }
+
+.card
+> .card-content 
+> .post-info-stripe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card
+> .card-content 
+> .post-info-stripe 
+> .post-date {
+    color: var(--sec-text);
+    font-style: italic;
+}

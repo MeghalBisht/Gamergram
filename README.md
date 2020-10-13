@@ -26,15 +26,6 @@ Heroku
 All PRs should be submitted with a screen recording/screenshot in order to get an approval.
 
 
-# Styles
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-[![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-
 There are 2 ways you can **contribute** in this repo:
 1. Solve the issues created 
 2. Create your own issues and contribute

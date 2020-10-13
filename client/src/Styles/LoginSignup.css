@@ -77,6 +77,12 @@
     font-family: cursive;
 }
 
+.svg-inline--fa{
+    position: relative;
+    float: right;
+    top: -2.5rem;
+    margin-right: 1.5rem;
+}
 
 @media screen and (max-width:588px){
     .myCard{

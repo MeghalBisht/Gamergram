@@ -3,6 +3,9 @@ import '../../Styles/LoginSignup.css'
 import { Link, useHistory } from 'react-router-dom'
 import M from 'materialize-css'
 import Footer from './Footer'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+const eye = <FontAwesomeIcon icon={faEye} />;
 
 function Signup() {
     const history = useHistory()
@@ -11,6 +14,7 @@ function Signup() {
     const [password, setPassword] = useState('')
     const [image, setImage] = useState("")
     const [url, setUrl] = useState(undefined)
+    const [passwordShow,setPasswordShow] = useState(false);
 
     useEffect(()=>{
         if(url){
@@ -95,6 +99,9 @@ function Signup() {
         }
 
     }
+    const togglePasswrod = () => {
+        setPasswordShow(passwordShow ? false:true);
+    }
 
     return (
         <div className="myCard">
@@ -112,12 +119,13 @@ function Signup() {
                     type="text"
                     placeholder="email"
                 />
-                <input
-                    onChange={e => setPassword(e.target.value)}
+                 <input
                     value={password}
-                    type="password"
+                    onChange={e => setPassword(e.target.value)}
+                    type={passwordShow?"text" : "password"}
                     placeholder="password"
                 />
+                <i onClick={togglePasswrod}>{eye}</i>
                 <div className="file-field input-field">
                     <div className="btn choose_file">
                         <span>Profile Picture</span>

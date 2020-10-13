@@ -31,7 +31,7 @@ There are 2 ways you can **contribute** in this repo:
 2. Create your own issues and contribute
 
 
- ## How to contribut?
+ ## How to contribute?
 
  1. **Fork** the repo on GitHub
  2. **Clone** the project to your own machine

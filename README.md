@@ -60,8 +60,8 @@ Shoutout to all the contributors!
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/matteoauger"><img src="https://avatars1.githubusercontent.com/u/33668505?s=460&u=852e165987d5bdb87dde18e93c4b3b1e42a9cb3f&v=4" width="70px;" alt=""/><br /><sub><b>Matteo AUGER</b></sub></a><br /><a href="https://github.com/MeghalBisht/Gamergram/pull/5" title="Code">For adding the Footer Component</a></td>
-    <td align="center"><a href="https://github.com/bineetNaidu"><img src="https://avatars2.githubusercontent.com/u/66471461?s=460&u=6f64e73da3c61019dd5f3d60b3d13a8591568b6e&v=4" width="70px;" alt=""/><br /><sub><b>bineetNaidu</b></sub></a><br /><a href="https://github.com/MeghalBisht/Gamergram/pull/6" title="Code">For adding the "Post Time" feature</a></td>
+    <td align="center"><a href="https://github.com/matteoauger"><img src="https://avatars1.githubusercontent.com/u/33668505?s=460&u=852e165987d5bdb87dde18e93c4b3b1e42a9cb3f&v=4" width="80px;" alt=""/><br /><sub><b>Matteo AUGER</b></sub></a><br /><a style="font-size: 14px" href="https://github.com/MeghalBisht/Gamergram/pull/5" title="Code">For adding the "Post Time" feature</a></td>
+    <td align="center"><a href="https://github.com/bineetNaidu"><img src="https://avatars2.githubusercontent.com/u/66471461?s=460&u=6f64e73da3c61019dd5f3d60b3d13a8591568b6e&v=4" width="80px;" alt=""/><br /><sub><b>bineetNaidu</b></sub></a><br /><a style="font-size: 14px" href="https://github.com/MeghalBisht/Gamergram/pull/6" title="Code">For adding the "Footer" component</a></td>
   </tr>
 </table>
 

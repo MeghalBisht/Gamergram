@@ -54,14 +54,14 @@ NOTE 2: Please abide by the [Code of Conduct](https://github.com/Webwiznitr/Milk
 
 ## Contributors ✨
 
-Shoutout to all the contributors! ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Shoutout to all the contributors! 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/matteoauger"><img src="https://avatars1.githubusercontent.com/u/33668505?s=460&u=852e165987d5bdb87dde18e93c4b3b1e42a9cb3f&v=4" width="100px;" alt=""/><br /><sub><b>Matteo AUGER</b></sub></a><br /><a href="https://github.com/MeghalBisht/Gamergram/pull/5" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/bineetNaidu"><img src="https://avatars2.githubusercontent.com/u/66471461?s=460&u=6f64e73da3c61019dd5f3d60b3d13a8591568b6e&v=4" width="100px;" alt=""/><br /><sub><b>bineetNaidu</b></sub></a><br /><a href="https://github.com/MeghalBisht/Gamergram/pull/6" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/matteoauger"><img src="https://avatars1.githubusercontent.com/u/33668505?s=460&u=852e165987d5bdb87dde18e93c4b3b1e42a9cb3f&v=4" width="70px;" alt=""/><br /><sub><b>Matteo AUGER</b></sub></a><br /><a href="https://github.com/MeghalBisht/Gamergram/pull/5" title="Code">For adding the Footer Component</a></td>
+    <td align="center"><a href="https://github.com/bineetNaidu"><img src="https://avatars2.githubusercontent.com/u/66471461?s=460&u=6f64e73da3c61019dd5f3d60b3d13a8591568b6e&v=4" width="70px;" alt=""/><br /><sub><b>bineetNaidu</b></sub></a><br /><a href="https://github.com/MeghalBisht/Gamergram/pull/6" title="Code">For adding the "Post Time" feature</a></td>
   </tr>
 </table>
 

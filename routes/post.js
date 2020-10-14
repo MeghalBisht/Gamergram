@@ -118,6 +118,21 @@ router.get('/allposts', requireLogin, (req, res) => {
         .catch(err => console.log(error))
 })
 
+// Paginated post fetching api
+router.get('/allposts/:page', requireLogin, (req, res) => {
+    const page = req.params.page;
+    Post.find()
+        .populate("postedBy", "_id name pic")
+        .populate("comments.postedBy", "_id name")
+        .sort('-createdAt').skip(5*(page-1)).limit(5)
+        .then(posts => {
+            if (!posts)
+                res.send({ message: "No posts" })
+            res.send({ page:page, posts: posts })
+        })
+        .catch(err => console.log(error))
+})
+
 router.get('/followerspost', requireLogin, (req, res) => {
     Post.find({ postedBy: { $in: req.user.following } })
         .populate("postedBy", "_id name pic")

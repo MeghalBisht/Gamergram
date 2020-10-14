@@ -6,12 +6,17 @@
     --highlight: #eebb4d;
     --sec-text: #8eaf77;
     --primary-text: #184d47;
+    --dark-bg: #0b2122;
 }
 
 .App{
     font-family: 'PT Sans', sans-serif;
     min-height: 100vh;
     background-color: var(--primary-bg);
+}
+
+main.dark-theme .App{
+    background-color:var(--dark-bg);
 }
 
 #toast-container{

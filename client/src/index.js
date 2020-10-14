@@ -5,7 +5,9 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <main id='toggleTheme' className="dark-theme || light-theme">
+      <App />
+    </main>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -13,6 +13,7 @@ import { reducer, initialState } from './Reducers/UserReducer'
 import './App.css'
 import SinglePost from './Components/Screens/SinglePost';
 import NewPassword from './Components/Screens/NewPassword';
+import ToggleTheme from './Components/ToggleTheme';
 
 export const UserContext = createContext()
 
@@ -54,12 +55,13 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <UserContext.Provider value={{ state, dispatch }} >
-      <div className="App">
-        <Router>
-          <Navbar />
-          <Routing />
-        </Router>
-      </div>
+        <div className="App">
+          <Router>
+            <Navbar />
+            <ToggleTheme />
+            <Routing />
+          </Router>
+        </div>
     </UserContext.Provider>
   );
 }

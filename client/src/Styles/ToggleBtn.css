@@ -1,0 +1,12 @@
+ #btn-toggle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 15px 8px;
+    user-select:none;
+    cursor: pointer;
+  }
+  
+   #btn-toggle > .fab {
+    font-size: 30px;
+  }

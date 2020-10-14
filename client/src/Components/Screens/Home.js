@@ -12,22 +12,32 @@ function Home() {
     const [loading, setLoading] = useState(true)
     const [miniLoading, setMiniLoading] = useState(false)
     const [posts, setPosts] = useState([])
-    useEffect(() => {
-        fetch('/allposts', {
+    const [page, setPage] = useState(1);
+    const [postsRemaining, setPostsRemaining] = useState(true)
+
+    const fetchPosts = (page) => {
+        const pageURI = 'allposts/'+page;
+        fetch(pageURI, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
         })
             .then(res => res.json())
             .then(data => {
-                setPosts(data.posts)
+                if(data.posts.length)
+                    setPosts([...posts, ...data.posts])
+                else
+                    setPostsRemaining(false)
                 setLoading(false)
             })
             .catch(err => {
                 console.log(err)
                 setLoading(false)
             })
-    }, [])
+    }
+    useEffect(() => {
+        fetchPosts(page);
+    }, [page])
 
     const makeComment = (text, postId) => {
         fetch('/comment', {
@@ -208,7 +218,7 @@ function Home() {
                                     <img src={post.photo} alt="post_img" />
                                 </div>
                                 <div className="card-content">
-                                  <div class="post-info-stripe">
+                                  <div className="post-info-stripe">
                                   {
                                         miniLoading ?
                                             <div className="like-loader">
@@ -223,7 +233,7 @@ function Home() {
                                                 }
                                             </div>
                                     }
-                                    <div class="post-date">{ relativeDate(post.createdAt) }</div>
+                                    <div className="post-date">{ relativeDate(post.createdAt) }</div>
                                   </div>
                                     
                                     <p className="likes">{post.likes.length} likes</p>
@@ -272,7 +282,11 @@ function Home() {
                         )
                     })
                 }
-
+                {
+                    !postsRemaining &&
+                    <h4>That's all folks!</h4>
+                }
+             <button className={'btn btn-large'} onClick={()=>setPage(page+1)}>Load more posts</button>
             </div>
         )
     }

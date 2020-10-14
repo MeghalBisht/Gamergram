@@ -87,10 +87,10 @@
 }
 
 .card-content i{
-   margin: -10px 0 0 0;
-   cursor: pointer;
-   font-size: 28px;
-   padding: 0;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 0;
 }
 
 .likes{
@@ -128,7 +128,7 @@
 }
 
 .homeContainer input::placeholder{
-color: var(--sec-text) !important;
+    color: var(--sec-text) !important;
 }
 
 .comment-box h6 span:nth-child(1){
@@ -229,15 +229,15 @@ color: var(--sec-text) !important;
 }
 
 .card
-> .card-content 
+> .card-content
 > .post-info-stripe {
     display: flex;
     justify-content: space-between;
 }
 
 .card
-> .card-content 
-> .post-info-stripe 
+> .card-content
+> .post-info-stripe
 > .post-date {
     color: var(--sec-text);
     font-style: italic;

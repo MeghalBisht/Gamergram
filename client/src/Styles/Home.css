@@ -35,7 +35,7 @@
 .home-card{
     width: 500px;
     max-width: 500px;
-    padding: 0 0;
+    padding: 0 0px;
     box-shadow: 0 4px 4px rgba(100, 100, 100, 0.421);
     margin: 15px;
 }
@@ -87,10 +87,10 @@
 }
 
 .card-content i{
-   margin: -10px 0 0 0;
-   cursor: pointer;
-   font-size: 28px;
-   padding: 0;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 0;
 }
 
 .likes{
@@ -122,13 +122,13 @@
     font-size: 17.5px;
     background-color: var(--sec-text);
     color: #fff;
-    padding: 8px 0;
+    padding: 8px 0px;
     text-align: center;
     border-radius: 4px;
 }
 
 .homeContainer input::placeholder{
-color: var(--sec-text) !important;
+    color: var(--sec-text) !important;
 }
 
 .comment-box h6 span:nth-child(1){
@@ -229,25 +229,16 @@ color: var(--sec-text) !important;
 }
 
 .card
-> .card-content 
+> .card-content
 > .post-info-stripe {
     display: flex;
     justify-content: space-between;
 }
 
 .card
-> .card-content 
-> .post-info-stripe 
+> .card-content
+> .post-info-stripe
 > .post-date {
     color: var(--sec-text);
     font-style: italic;
-}
-
-
-.loading-btn {
-    padding: 0.7rem 2rem;
-    font-size: 1.5rem;
-    border: none;
-    font-weight: 600;
-    border-radius: 0.5rem;
 }

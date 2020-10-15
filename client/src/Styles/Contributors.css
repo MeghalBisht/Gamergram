@@ -1,0 +1,51 @@
+.contributors {
+   display: flex;
+   justify-content: center;
+}
+
+.contributors p {
+   font-size: 35px;
+   font-weight: bold;
+}
+
+.Pic {
+   height: 140px;
+   width: 200px;
+}
+
+.Main {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.Sub {
+   display: grid;
+   /* align-items: center;
+   justify-content: center; */
+   height: 270px;
+   width: 230px;
+   margin: 20px;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Sub p {
+   font-size: 20px;
+   text-align: center;
+   margin: auto;
+}
+
+.Sub button {
+   height: 30px;
+   width: 150px;
+   margin: auto;
+   background: #184d47;
+}
+
+@media screen and (max-width: 480px) {
+   .contributors p {
+      font-size: 30px;
+   }
+}

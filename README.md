@@ -19,7 +19,7 @@ Heroku
 ## Contributors guideline
 
 All PRs should be submitted with a screen recording/screenshot in order to get an approval.
-=======
+
 ## Installation
 
 1. Fork this repository

@@ -1,32 +1,30 @@
 .contributors {
-   display: flex;
-   justify-content: center;
-}
-
-.contributors p {
+   text-align: center;
+   color: var(--primary-text);
    font-size: 35px;
    font-weight: bold;
 }
 
 .Pic {
    height: 140px;
-   width: 200px;
+   object-fit: contain;
 }
 
 .Main {
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
    flex-wrap: wrap;
 }
 
 .Sub {
-   display: grid;
-   /* align-items: center;
-   justify-content: center; */
+   border-radius: 6px;
+   display: flex;
+   flex-direction: column;
    height: 270px;
-   width: 230px;
+   width: 200px;
    margin: 20px;
+   padding: 6px;
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -35,10 +33,10 @@
    font-size: 20px;
    text-align: center;
    margin: auto;
+   font-weight: bold;
 }
 
-.Sub button {
-   height: 30px;
+.Sub button{
    width: 150px;
    margin: auto;
    background: #184d47;

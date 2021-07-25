@@ -48,7 +48,6 @@ There are 2 ways you can **contribute** in this repo:
  5. Submit a **Pull request** 
 
 NOTE 1: Please abide by the [Contributing Guidelines](https://github.com/Webwiznitr/MilkERP/blob/master/CONTRIBUTING.md).
-
 NOTE 2: Please abide by the [Code of Conduct](https://github.com/Webwiznitr/MilkERP/blob/master/CODE_OF_CONDUCT.md).
 
 <br>

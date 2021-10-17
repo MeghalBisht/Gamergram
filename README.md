@@ -6,7 +6,7 @@ Has an o-auth feature using which we can login through google.
 
 ## Live at 
 
-https://gamergram.herokuapp.com/
+https://gamergrams.herokuapp.com/
 
 ## Tech used
 
